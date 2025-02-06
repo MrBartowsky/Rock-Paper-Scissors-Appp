@@ -166,4 +166,21 @@ body{
 }
 
 
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(199, 96%, 62%);
+}
+
 
