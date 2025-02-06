@@ -165,6 +165,45 @@ body{
     box-shadow: 0 0.5rem var(--shadow-med), 0 0.5rem var(--rock-2);
 }
 
+/* results */
+.results {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-template-areas: 
+    "you-title ai-title"
+    "you-picked ai-picked";
+    mix-width: 1000px;
+    margin: 0 auto; 
+}
+.results_heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 4rem 0 8rem;
+}
+
+.results_result {
+    min-width: 10rem;
+    min-height: 10rem;
+    background: #16213d;
+    border-radius: 50%;
+    transform: scale(1.4);
+    z-index: -1;
+}
+.results_heading:first-of-type {
+    grid-area:you-title;
+}
+.results_heading:last-of-type {
+    grid-area:ai-title;
+}
+
+.results_result:first-of-type {
+    grid-area:you-picked;
+}
+.results_result:last-of-type {
+    grid-area:you-picked;
+}
+
 /* rules button*/
 .rules-btn {
     position: absolute;
@@ -257,4 +296,7 @@ body{
     transition: none;
 }
 
+.hidden {
+    display: none;
+}
 
