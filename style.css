@@ -252,4 +252,9 @@ body{
   color: hsl(199, 96%, 62%);
 }
 
+/* utilities */
+.preload *{
+    transition: none;
+}
+
 
